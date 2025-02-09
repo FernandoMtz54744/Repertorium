@@ -1,0 +1,58 @@
+.submit-bibliografia input{
+    width: 15rem;
+    height: 2.5rem;
+    font-size: medium;
+    background-color: #80deea;
+    border-radius: 5px;
+    outline: inherit;
+    border: none;
+    font-family: inherit;
+}
+
+.submit-bibliografia{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-bibliografia input:hover{
+    cursor: pointer;
+}
+
+.recursos-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 3rem;
+}
+
+.recurso-card{
+    background-color: var(--main-color);
+    height: 10rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.recurso-card a{
+    text-decoration: none;
+    color: whitesmoke;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.recursos-container iframe{
+    height: 10rem;
+    width: 20rem;
+}
+
+
+

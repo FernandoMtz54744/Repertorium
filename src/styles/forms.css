@@ -1,0 +1,160 @@
+:root{
+    --main-color:#000B58;
+    --secondary-color: #006A67;
+}
+
+.addSongContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.addSongForm{
+    background-color: var(--main-color);
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70vw;
+}
+
+.addSongForm > .title{
+    text-align: center;
+    font-weight: 500;
+}
+
+.input-container{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.addSongForm input{
+    outline: inherit;
+    border: none;
+}
+
+.addSongForm input[type="text"]{
+    height: 1.5rem;
+    border-radius: 2px;
+    font-size: 1rem;
+    width: 90%;
+    font-family: inherit;
+    padding-left: 0.5rem;
+}
+
+.addSongForm label{
+    font-size: larger;
+}
+
+.addSongForm .submit{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.addSongForm .submit input{
+    width: 80%;
+    height: 2.5rem;
+    font-size: medium;
+    background-color: #80deea;
+    border-radius: 5px;
+    outline: inherit;
+    border: none;
+    font-family: inherit;
+}
+
+.addSongForm .submit input:hover{
+   cursor: pointer;
+}
+
+.instrumento-checks-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+}
+
+.enlaces-container{
+    width: 100%;
+}
+
+.enlaces{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.enlace-contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+
+.eliminar-enlace{
+    background-color: #b71c1c;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.enlace-agregar-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 1rem 0px 2rem 0px;
+}
+
+.agregar-enlace{
+    background-color: #80deea;
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: black;
+}
+
+.eliminar-enlace:hover, .agregar-enlace:hover{
+    cursor: pointer;
+}
+
+/*CHECKBOX*/
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espaciado entre el texto y el checkbox */
+    margin-right: 3rem;
+}
+  
+.checkbox-container input[type="checkbox"] {
+    appearance: none; /* Elimina el estilo predeterminado del navegador */
+    width: 22px; /* Ancho del checkbox */
+    height: 22px; /* Alto del checkbox */
+    background-color: whitesmoke;
+    border-radius: 4px; /* Bordes redondeados */
+    outline: none; /* Sin borde de enfoque predeterminado */
+    cursor: pointer; /* Cambia el cursor a puntero */
+}
+
+.checkbox-container input[type="checkbox"]:checked {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.checkbox-container input[type="checkbox"]:checked::before {
+    content: "✔"; /* Palomita */
+    color: var(--main-color); /* Color de la palomita */
+    font-size: 14px; /* Tamaño de la palomita */
+    position: absolute;
+}
