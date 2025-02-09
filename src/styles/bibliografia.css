@@ -54,5 +54,12 @@
     width: 20rem;
 }
 
-
+@media (max-width: 480px){
+    .recursos-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
 

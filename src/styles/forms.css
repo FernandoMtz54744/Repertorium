@@ -156,5 +156,26 @@
     content: "✔"; /* Palomita */
     color: var(--main-color); /* Color de la palomita */
     font-size: 14px; /* Tamaño de la palomita */
-    position: absolute;
+}
+
+
+@media (max-width: 480px){
+    .instrumento-input{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .addSongForm input[type="text"]{
+        width: 10rem;
+    }
+
+    .checkbox-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 1rem;
+    }
 }

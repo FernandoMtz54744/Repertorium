@@ -32,12 +32,11 @@ export default function Song({songData, enlace, setEnlace, agregarEnlance, elimi
   return (
     <div>
       <div className='song-container'>
-        <center className='title'>{songData.titulo} - {songData.artista}</center>
+        <center className='title'>{songData.titulo} <br/>{songData.artista}</center>
         <div className='form-add-link-container'>
           <form className='form-link'>
             <input type="text" placeholder='Enlace' value={enlace} onChange={(e)=>setEnlace(e.target.value)}/>
             <button onClick={agregarEnlance}>Agregar</button>
-            <button>Documento</button>
           </form>
         </div>
         <div className='links-song-container'>

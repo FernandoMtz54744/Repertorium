@@ -14,7 +14,7 @@ export default function AddSong({addEnlace, deleteEnlace, form, handleOnChange, 
                 <label htmlFor="titulo">Titulo:</label>
                 <input type="text" name='titulo' id='titulo' value={form.titulo} onChange={handleOnChange} autoComplete='off'/>
             </div>
-            <div className='input-container'>
+            <div className='input-container instrumento-input'>
                 <label htmlFor="instrumento">Instrumento:</label>
                 <div className='instrumento-checks-container'>
                     <div className='checkbox-container'>

@@ -108,3 +108,31 @@ iframe{
 .delete-song-button:hover{
     cursor: pointer;
 }
+
+@media (max-width: 480px){
+    .form-link{
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .form-link input{
+        width: 80vw !important;
+        margin-bottom: 0.5rem;
+        margin-right: 0px !important;
+    }
+
+    .form-link button{
+        margin-bottom: 0.5rem;
+    }
+
+    .form-add-link-container{
+        margin: 0px;
+    }
+
+    iframe{
+        width: 20rem;
+        height: 12rem;
+    }
+}
